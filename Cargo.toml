@@ -8,6 +8,7 @@ name = "redis-protocol"
 readme = "README.md"
 repository = "https://github.com/aembke/redis-protocol.rs"
 version = "1.0.0"
+edition = "2018"
 
 [badges]
 
@@ -29,6 +30,11 @@ pretty_env_logger = "0.2"
 [dev-dependencies]
 lazy_static = "1.1"
 rand = "0.5"
+criterion = "0.3"
+
+[[bench]]
+name = "my_benchmark"
+harness = false
 
 [lib]
 doc = true

@@ -65,17 +65,23 @@ pub mod decode;
 
 /// Shorthand for `use`'ing `types`, `encode`, `decode`, etc.
 pub mod prelude {
-  pub use types::*;
-  pub use encode::*;
-  pub use decode::*;
-
-  pub use utils::redis_keyslot;
+    pub use crate::types::*;
+    pub use crate::encode::*;
+    pub use crate::decode::*;
+    pub use crate::utils::redis_keyslot;
 }
+// pub mod prelude {
+//   pub use types::*;
+//   pub use encode::*;
+//   pub use decode::*;
+//
+//   pub use utils::redis_keyslot;
+// }
 
 pub use utils::{
   redis_keyslot,
   digits_in_number,
   ZEROED_KB,
   CRLF,
-  NULL
+  NULL,
 };
